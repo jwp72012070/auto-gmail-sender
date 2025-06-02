@@ -1,0 +1,6 @@
+token.json
+credentials.json
+recipients.csv
+__pycache__/
+.env
+files
