@@ -17,12 +17,14 @@ Gmail API를 활용하여 CSV 파일에 정의된 수신자들에게 이메일�
 
 ## 📁 프로젝트 구조
 
+```
 auto_mail_send/
 ├── sending.py # 메일 전송 메인 스크립트
 ├── recipients.csv # 수신자 정보 목록
 ├── .gitignore
 ├── README.md
 └── files/ # 첨부파일 저장 폴더
+```
 
 ---
 
@@ -51,17 +53,22 @@ name,email,files
 홍길동,hong@example.com,"files/intro.pdf;files/schedule.pdf"
 김민지,kim@example.com,"files/notice.pdf"
 
+```
+
 ---
 
 ### 4. 실행
 
-- python sending.py
+```
+python sending.py
+```
+
 - 처음 실행시 브라우저가 열리며 Google 로그인 필요
 - 인증이 완료되면 token.json 파일이 생성됨
 
-📌주의사항
+---
+
+### 📌주의사항
+
 - Gmail Api 사용량 제한: 하루 약 100~500 건
 - 메일 1건당 첨부파일 용량은 총 25MB 이하로 제한됨
-
-
-```
